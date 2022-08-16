@@ -4,7 +4,8 @@ from django.http import HttpResponse
 
 
 def index (request):
-    return HttpResponse('Hello there !')
+    return render(request, 'meetups/index.html')
 
 def greetings(request):
     return HttpResponse('namaste')
+
