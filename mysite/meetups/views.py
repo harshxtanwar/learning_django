@@ -7,6 +7,7 @@ def index (request):
 
     # we defined our own temporary dataset
     meetups = [
+
         {
         'title': 'A First Meetup',
         'location': 'New York',
@@ -38,3 +39,14 @@ def index (request):
 def greetings(request):
     return HttpResponse('namaste')
 
+
+def meetup_details(request, meetup_slug):
+    print(meetup_slug)
+    selected_meetup = {
+        'title': 'A First Meetup',
+        'description': 'This is the first meetup !'
+        }
+    return render(request, 'meetups/meetup-details.html', {
+        'meetup_title': selected_meetup['title'],
+        'meetup_description': selected_meetup['description']
+    })

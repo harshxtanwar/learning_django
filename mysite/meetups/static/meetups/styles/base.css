@@ -23,11 +23,13 @@ button,
   cursor: pointer;
   font: inherit;
   padding: 0.5rem 1.5rem;
-  background-color: #350490;
-  border: 1px solid #350490;
+  background-color: #f13ff1;
+  border: 1px solid #fc72fc;
   color: white;
   border-radius: 4px;
   text-decoration: none;
+  /* margin-right: 2000px; */
+  /* position: absolute; */
 }
 
 button:hover,
